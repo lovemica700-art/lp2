@@ -7,7 +7,7 @@ public class Média_aritmeticaMatriz {
 
     public static void main(String[] args) {
         
-        int[][] matrizA = new int[4][4];
+        int[][] matrizA = new int[12][12];
 
         int soma = 0;
 
@@ -41,4 +41,5 @@ public class Média_aritmeticaMatriz {
         System.out.printf("%.4f    ",media);
 
     }
+
 }
