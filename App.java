@@ -1,24 +1,22 @@
+import modelo.Endereco;
+import modelo.Pessoa;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
 
-        Cliente cliente = new Cliente();
-        cliente.setNome ("Fulano de Tal");
-        cliente.setCpf("88888888");
-        System.out.println("Bom dia "+cliente.getNome());
+        System.out.println("Programação Orientada a Objetos");
 
-        Cliente cliente1 = new Cliente( "Frederico Wanderley");
-        System.out.println("Bom dia "+cliente1.getNome());
+        Pessoa p ; //declarando
+        Endereco endereco;//declarando
 
-        cliente1.setTelefone("35445243");
-        //Endereco endereco = new Endereco();
-        cliente1.setEndereco(new Endereco("Av das Pombas", "2020", null, "Floresta",
-        new Cidade()));
+        p = new Pessoa(null, null, null);
 
-        cliente1.getEndereco().getCidade().setCidade("Cascavel");
+        p.setNome("Frederico Lima");
+        p.setEmail("frederico@gmail.com");
+        p.setCpf("4383309");
 
-
-        
+        endereco = new Endereco("Av das Pombas", "2020", "IFPR", "Floresta", "Casacavel", "PR","Brasil");
+        p.setEndereco( endereco);
 
 
 
