@@ -1,32 +1,51 @@
 package gerenciadorCursos;
+
 public class Academicos {
     
     private String nome;
-    private String turma;
-    private String semestre;
-    
-    public Academicos(String nome, String turma, String semestre) {
+    private String matricula;
+    private String curso;
+    private String email;
+    private String telefone;
+
+    public Academicos(String curso, String email,String matricula, String nome, String telefone) {
+        this.curso = curso;
+        this.email = email;
+        this.matricula = matricula;
         this.nome = nome;
-        this.turma = turma;
-        this.semestre = semestre;
+        this.telefone = telefone;
     }
+
+    
     public String getNome() {
         return nome;
     }
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getTurma() {
-        return turma;
+    public String getMatricula() {
+        return matricula;
     }
-    public void setTurma(String turma) {
-        this.turma = turma;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
-    public String getSemestre() {
-        return semestre;
+    public String getCurso() {
+        return curso;
     }
-    public void setSemestre(String semestre) {
-        this.semestre = semestre;
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
-
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getTelefone() {
+        return telefone;
+    }
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+     
 }

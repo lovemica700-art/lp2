@@ -1,51 +1,38 @@
+package sistemaInventario;
+
 public class Cliente {
+    
+    private String nomeCliente;
+    private String cpfCliente;
+    private String numeroCliente;
 
-    //atributos
-    private String nome;
-    private String cpf;
-    private String telefone;
-    private String endereco;
-
-
-    //constutor
-    public Cliente(){
-    }
-
-    //construtor
-    public Cliente(String nome){
-        this.nome = nome;
+    public Cliente(String nomeCliente, String cpfCliente, String numeroCliente) {
+        this.nomeCliente = nomeCliente;
+        this.cpfCliente = cpfCliente;
+        this.numeroCliente = numeroCliente;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getCpf() {
-        return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    public String getTelefone() {
-        return telefone;
-    }
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setEndereco(Endereco endereco) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setEndereco'");
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
+    public String getNumeroCliente() {
+        return numeroCliente;
+    }
+
+    public void setNumeroCliente(String numeroCliente) {
+        this.numeroCliente = numeroCliente;
+    }
 }

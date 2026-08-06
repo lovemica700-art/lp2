@@ -1,33 +1,21 @@
-package modelo;
+package sistReservaHoteis;
 
 public class Endereco {
-
-    //atributos
-
+    
     private String rua;
     private String numero;
-    private String complemeto;
-    private String bairo;
     private String cidade;
     private String estado;
-    private String pais;
+    private String cep;
 
-    //construtores
-    public Endereco() {
-
-    }
-
-    public Endereco(String rua, String numero, String complemeto, String bairo, String cidade, String estado,
-        String pais) {
+    public Endereco(String rua, String numero, String cidade, String estado, String cep) {
         this.rua = rua;
         this.numero = numero;
-        this.complemeto = complemeto;
-        this.bairo = bairo;
         this.cidade = cidade;
         this.estado = estado;
-        this.pais = pais;
+        this.cep = cep;
     }
-    
+
     public String getRua() {
         return rua;
     }
@@ -42,22 +30,6 @@ public class Endereco {
 
     public void setNumero(String numero) {
         this.numero = numero;
-    }
-
-    public String getComplemeto() {
-        return complemeto;
-    }
-
-    public void setComplemeto(String complemeto) {
-        this.complemeto = complemeto;
-    }
-
-    public String getBairo() {
-        return bairo;
-    }
-
-    public void setBairo(String bairo) {
-        this.bairo = bairo;
     }
 
     public String getCidade() {
@@ -76,14 +48,11 @@ public class Endereco {
         this.estado = estado;
     }
 
-    public String getPais() {
-        return pais;
+    public String getCep() {
+        return cep;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setCep(String cep) {
+        this.cep = cep;
     }
-
-   
-
 }
